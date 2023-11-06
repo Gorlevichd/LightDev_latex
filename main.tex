@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LigthDev CV
+% LaTeX Template
+% Version 1.0 (06/11/23)
+%
+% Authors:
+% Gorlevich Daniil (gorlevichd@gmail.com)
+% Based on template "Developer CV" by: Jan Vorisek (jan@vorisek.me)
+% I use the general structure and baseline functionality provided by Jan, 
+% but reduce it to a more minimalistic text-based version
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{paratype}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel} % Language support
+\usepackage{graphicx}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{\textwidth}
+    \begin{minipage}[t]{0.25\textwidth}
+        \vspace{-\baselineskip}
+        \includegraphics[width = 0.8\textwidth]{kitten_in_a_suit.jpg}
+    \end{minipage}
+    \begin{minipage}[t]{0.5\textwidth}
+        \vspace{-\baselineskip}
+        {\huge \textbf{Your Name}} % First name
+ 
+        {\large \textbf{Occupation}} % Last name
+
+        \vspace{0.5\baselineskip}
+        
+        \icon{MapMarker}{12}{Location} \\
+        \icon{Phone}{12}{Phone} \\ 
+        \icon{At}{12}{\href{mailto:link}{e-mail}} \\
+        \icon{Github}{12}{\href{github link}{Github}}\\
+    \end{minipage}
+
+    \vspace{\baselineskip}
+\end{minipage}
+
+\rule{\textwidth}{0.5pt}
+
+\vspace{0.5\baselineskip}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{About me}
+    
+    \entry{General skill}{
+    Small Description
+    }
+
+    \entry{General skill}{
+    Small Description
+    }
+
+    \entry{General skill}{}
+    
+    \cvsect{Education}
+
+    \position{Bachelor's}{Where}{When}{
+    Small Description
+    }
+    
+    \position{Master's}{Where}{When}{
+    Small description
+    }
+        
+    
+    \cvsect{Experience}
+
+    \position{Position}{Where}{When}{
+    Small description
+    }
+    
+    \position{Position}{Where}{When}{
+    Small description
+    }
+
+    
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth} % 50% of the page for the skills bar chart
+    \vspace{-\baselineskip} % Required for vertically aligning
+    \cvsect{Technical skills}
+    
+    \textit{Expert}
+
+    \begin{itemize}
+        \item Python
+		\item ML-stack
+  	\item PyTorch
+   \end{itemize}
+    
+    \textit{Intermediate}
+    
+    \begin{itemize}
+        \item SQL
+        \item R
+        \item Git
+    \end{itemize}
+    
+    \textit{Basic}
+    
+    \begin{itemize}
+        \item C++
+        \item MATLAB
+    \end{itemize}
+
+    
+    \cvsect{Languages}
+    
+    \entry{English}{Native}
+
+    
+    \entry{French}{Proficient}
+
+	\cvsect{Projects}
+
+    \entry{Project}{  
+    Description
+    }
+    
+    \entry{Project}{  
+    Description
+    }
+    
+    \entry{Project}{  
+    Description
+    }
+    
+\end{minipage}
+\end{document}
